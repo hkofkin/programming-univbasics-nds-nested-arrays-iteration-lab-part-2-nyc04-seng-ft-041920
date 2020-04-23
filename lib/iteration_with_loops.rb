@@ -7,7 +7,7 @@ def find_min_in_nested_arrays(src)
   
   while outer_count < src.length do
     inner_count = 0 
-    min_element = 100
+    min_element = nil
     
     while inner_count < src[outer_count].length do
       if src[outer_count][inner_count] < min_element
@@ -15,6 +15,7 @@ def find_min_in_nested_arrays(src)
       end
       inner_count += 1
     end 
+    
     outer_count += 1
     min_array << min_element
   end 
